@@ -1,4 +1,5 @@
 import { faker } from "@faker-js/faker";
+import { storeWeatherData } from "../helpers/helper.js";
 
 export const generateLondonWeatherData = (): WeatherData => {
   // Generate random weather data
