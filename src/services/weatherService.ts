@@ -11,6 +11,8 @@ export const generateLondonWeatherData = (): WeatherData => {
     rain: faker.number.int({ min: 65, max: 75 }),
   };
 
+  storeWeatherData(generatedWeatherData).catch(console.error);
+
   // Return weather data
   return generatedWeatherData;
 };
@@ -24,7 +26,7 @@ export const generateDublinWeatherData = (): WeatherData => {
     wind: faker.number.int({ min: 2, max: 78 }),
     rain: faker.number.int({ min: 65, max: 75 }),
   };
-
+  storeWeatherData(generatedWeatherData).catch(console.error);
   // Return weather data
   return generatedWeatherData;
 };
@@ -38,7 +40,7 @@ export const generateManchesterWeatherData = (): WeatherData => {
     wind: faker.number.int({ min: 2, max: 78 }),
     rain: faker.number.int({ min: 65, max: 75 }),
   };
-
+  storeWeatherData(generatedWeatherData).catch(console.error);
   // Return weather data
   return generatedWeatherData;
 };
@@ -52,7 +54,7 @@ export const generateGlasgowWeatherData = (): WeatherData => {
     wind: faker.number.int({ min: 2, max: 78 }),
     rain: faker.number.int({ min: 65, max: 75 }),
   };
-
+  storeWeatherData(generatedWeatherData).catch(console.error);
   // Return weather data
   return generatedWeatherData;
 };
